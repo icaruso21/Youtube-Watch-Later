@@ -10,7 +10,6 @@ Vagrant.configure("2") do |config|
   # bit of time by using a cached copy.)
   config.vm.box = "ubuntu/xenial64"
 
-
   # Here is the section for defining the database server, which I have
   # named "dbserver".
   config.vm.define "dbserver" do |dbserver|
@@ -140,7 +139,7 @@ Vagrant.configure("2") do |config|
     # labs, but recall that it means that our host computer can
     # connect to IP address 127.0.0.1 port 8080, and that network
     # request will reach our webserver2 VM's port 80.
-    webserver2.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
+    webserver2.vm.network "forwarded_port", guest: 80, host: 8081, host_ip: "127.0.0.1"
     
     # We set up a private network that our VMs will use to communicate
     # with each other. Note that I have manually specified an IP
