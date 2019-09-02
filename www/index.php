@@ -49,6 +49,6 @@
             <input type='file' name='file' />
             <input type='submit' value='Upload' name='but_upload'>
         </form>
-
+        <a href='http://127.0.0.1:8081'>Red Plant</a>
     </body>
 </html>

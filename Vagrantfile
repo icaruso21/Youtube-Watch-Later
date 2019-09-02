@@ -163,9 +163,9 @@ Vagrant.configure("2") do |config|
             
       # Change VM's webserver2's configuration to use shared folder.
       # (Look inside test-website.conf for specifics.)
-      cp /vagrant/test-website.conf /etc/apache2/sites-available/
+      cp /vagrant/test-website2.conf /etc/apache2/sites-available/
       # activate our website configuration ...
-      a2ensite test-website
+      a2ensite test-website2
       # ... and disable the default website provided with Apache
       a2dissite 000-default
       # Reload the webserver2 configuration, to pick up our changes
