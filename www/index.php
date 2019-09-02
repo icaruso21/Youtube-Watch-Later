@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <h1>Video Storage and Playback:</h1>
+        <h1>Video Upload and Storage</h1>
 
         <h3>Upload video files below to view later:</h3>
     
@@ -19,7 +19,7 @@
             $videoFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
             
             // Valid file extensions
-            $extensions_arr = array("mp4","avi","3gp","mov","mpeg");
+            $extensions_arr = array("mp4","avi","3gp","mov","mpeg","wav");
             
             // Check extension
             if( in_array($videoFileType,$extensions_arr) ){
