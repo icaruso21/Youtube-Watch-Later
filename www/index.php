@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <h1>Video Storage and Playback:</h1>
+
+        <h3>Upload video files below to view later:</h3>
+    
         <?php
         include("config.php");
         
@@ -48,7 +52,8 @@
         <form method="post" action="" enctype='multipart/form-data'>
             <input type='file' name='file' />
             <input type='submit' value='Upload' name='but_upload'>
-        </form>
-        <a href='http://127.0.0.1:8081'>Red Plant</a>
+        </form><br>
+        <a href='http://127.0.0.1:8081'>Click here to play your videos</a>
+        <br><br><font size="1">Created by Jack Kearney, Isaac Caruso, and Reid Smith</font>
     </body>
 </html>
