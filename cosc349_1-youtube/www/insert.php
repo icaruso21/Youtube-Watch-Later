@@ -24,4 +24,5 @@ if(mysqli_query($link, $sql)){
 // Close connection
 mysqli_close($link);
 ?>
- <a href='http://127.0.0.1:8080'>Click here to upload more videos</a>
+<br><a href='http://127.0.0.1:8080'>Click here to upload more videos</a>
+<br><a href='http://127.0.0.1:8081'>Click here to go to your playlist</a>
