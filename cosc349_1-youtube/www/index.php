@@ -18,7 +18,7 @@
             </p>
             <input type="submit" value="Submit">
         </form><br>
-        <a href='http://127.0.0.1:8081'>Click here to play your videos</a>
+        <a href='http://127.0.0.1:8081'>Click here to see your custom playlist</a>
         <br><br><font size="1">Created by Jack Kearney, Isaac Caruso, and Reid Smith <br>
            <b> *Please note the embed url can be found by clicking share on the video's webpage and then clicking embed video. Copy the entire provided code and provide above.
     </body>
