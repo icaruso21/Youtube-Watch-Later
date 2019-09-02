@@ -8,15 +8,13 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-// Escape user inputs for security
-$video_name = mysqli_real_escape_string($link, $_REQUEST['video_name']);
-$embed_url = mysqli_real_escape_string($link, $_REQUEST['embed_url']);
 
 
-// Attempt insert query execution
-$sql = "INSERT INTO videos (video_name, embed_url) VALUES ('$video_name', '$embed_url')";
+
+// Attempt Playlist deletion
+$sql = "TRUNCATE table videos";
 if(mysqli_query($link, $sql)){
-    echo "Records added successfully.";
+    echo "Playlist cleared!";
 } else{
     echo "ERROR: Was not able to execute $sql. " . mysqli_error($link);
 }

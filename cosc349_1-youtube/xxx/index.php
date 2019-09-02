@@ -41,10 +41,16 @@
         } else{
             echo "ERROR: Could not execute $sql. " . mysqli_error($link);
         }
+
+
          
         // Close connection
         mysqli_close($link);
         ?>
+
+        <form action="clear.php" method="post">
+            <br><input type="submit" value="Clear Playlist">
+        </form><br>
                 
             </head>
             <body>
