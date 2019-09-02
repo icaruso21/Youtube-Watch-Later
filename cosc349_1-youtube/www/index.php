@@ -1,7 +1,10 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <h1>Video Upload and Storage</h1>
+        <h1>Youtube Video Saver</h1>
+
+        <h4>Save links to your favorite Youtube videos to watch in a customized playlist later
+        </h4>
     </head>
     <body>
         <form action="insert.php" method="post">

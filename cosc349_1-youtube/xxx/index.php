@@ -1,12 +1,17 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <h1>Video Storage and Playback:</h1>
+        <h1>My Saved Videos Playback:</h1>
 
-        <h3>View video files below:</h3>
-    
+        
         <?php
-        include("config.php");
+        //Connect to database
+        $link = mysqli_connect("192.168.2.12", "webuser", "insecure_db_pw", "fvision");
+ 
+        // Check connection
+        if($link === false){
+            die("ERROR: Could not connect. " . mysqli_connect_error());
+        }
         ?>
         
 
@@ -18,8 +23,7 @@
         <br>
 <?php
         
-        echo "The current video playing is ".$name."<br />";
-        echo "<embed src='$target_file' width='560' height='315'></embed>";
+        
 ?>
         <br><br><font size="1">Created by Jack Kearney, Isaac Caruso, and Reid Smith</font>
     </body>
